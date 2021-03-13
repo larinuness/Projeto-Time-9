@@ -42,7 +42,9 @@ export default {
 }
 
 .linkcolabore {
+  display:flex;
   margin-top: 20px;
+  justify-content: space-around;
 }
 
 .home .fotoexemplo {
