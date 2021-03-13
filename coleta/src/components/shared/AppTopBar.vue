@@ -4,9 +4,9 @@
     <v-app-bar app color="green" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>
-        <router-link class="link-home" to="/">
+        
           Projeto Coleta
-        </router-link>
+     
       </v-toolbar-title>
     </v-app-bar>
 
@@ -63,6 +63,6 @@ export default {
 <style scoped>
 .app-top-bar a {
   text-decoration: none;
-  color: white;
+  
 }
 </style>
