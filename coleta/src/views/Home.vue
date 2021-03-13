@@ -58,7 +58,10 @@ export default {
   
 }
 .home-image1 {
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 3px;
+  
  
 }
 
