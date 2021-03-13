@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-<<<<<<< HEAD
   
-=======
       <router-link to="/">Home !</router-link> |
       <router-link to="/about">About</router-link>
->>>>>>> 24dfcac06c96e1a8e6839c1b62254f245ae89432
     </div>
     <router-view/>
   </div>
