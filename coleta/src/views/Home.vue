@@ -60,9 +60,7 @@ export default {
 .home-image1 {
   margin-left: auto;
   margin-right: auto;
-  border-radius: 3px;
-  
- 
+  border-radius: 3px; 
 }
 
 .home-image2 {
