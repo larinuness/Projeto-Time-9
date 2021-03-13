@@ -1,22 +1,38 @@
 <template>
-
-  <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">Brasileirão Série A</h2>
-    <v-img
-      class="inicio-imagem mb-4"
-      src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2974821:1596806515/Serie-A.png">
-    </v-img>
-    <p>A Série A do Campeonato Brasileiro de Futebol de 2020, oficialmente Brasileirão Assaí – Série A 2020 por motivos de patrocínio, é a 64.ª edição da principal divisão do futebol brasileiro. A disputa tem o mesmo regulamento dos anos anteriores, quando foi implementado o sistema de pontos corridos.</p>
-  </v-container>
-    
+  <v-simple-table>
+    <template v-slot:default>
+      <thead>
+        <tr>
+          <th colspan="2" class="text-left">Pontos de Coleta</th>
+          <th colspan="2" class="text-left">Categoria</th>
+          <th colspan="2" class="text-left">Localização</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(clube, index) of clubes" :key="clube.id">
+          <td>{{ index + 1 }}</td>
+          <td>
+            <v-avatar size="24">
+              <img :src="clube.escudo" :alt="clube.nome"/>
+            </v-avatar>
+            <span class="pl-2">{{ clube.nome }}</span>
+          </td>
+          <td class="text-right">{{ clube.pontos }}</td>
+        </tr>
+      </tbody>
+    </template>
+  </v-simple-table>
 </template>
-
-<style>
-
-</style>
-
+​
 <script>
 export default {
-    
+  name: 'ClubesTabela',
+  props: {
+    clubes: {
+      type: Array,
+      required: true
+    }
+  }
 }
 </script>
