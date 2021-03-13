@@ -36,12 +36,4 @@
 
 <script>
 
-import Pontos_De_Coleta from './components/Pontos_De_Coleta'
-export default {
-  name: 'App',
-  components: {
-    Pontos_De_Coleta
-  },
-  // Código omitido data()
-};
 </script>
