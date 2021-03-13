@@ -23,7 +23,7 @@
             </v-list-item>
           </router-link>
 
-          <router-link to="/PontoColeta">
+          <router-link to="/PontosColeta">
             <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
