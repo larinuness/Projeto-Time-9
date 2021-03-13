@@ -1,6 +1,4 @@
 <template>
-
-<template>
     
   <v-container>
       <div class="app-Pontos_De_Coleta">
