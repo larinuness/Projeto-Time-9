@@ -1,51 +1,20 @@
 <template>
-  <v-card class="overflow-hidden">
-    <v-app-bar
-      absolute
-      color="#43a047"
-      dark
-      shrink-on-scroll
-      prominent
-      src="https://picsum.photos/1920/1080?random"
-      fade-img-on-scroll
-      scroll-target="#scrolling-techniques-5"
-      scroll-threshold="500"
-    >
-      <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(55,236,186,.7), rgba(25,32,72,.7)"
-        ></v-img>
-      </template>
+  <div class="app-top-bar">
 
+    <v-app-bar app color="green" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-
-      <v-app-bar-title>Projeto Coleta</v-app-bar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
+      <v-toolbar-title>
+        <router-link class="link-home" to="/">
+          Projeto Coleta
+        </router-link>
+      </v-toolbar-title>
     </v-app-bar>
 
-    <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-      class="background"
-    >
-    <v-list nav dense>
-        <v-list-item-group
-          v-model="group"
-          active-class="green--text text--lighten-2"
-        >
-          
-            <router-link to="/">
+    <v-navigation-drawer v-model="drawer" absolute temporary>
+      <v-list nav dense>
+        <v-list-item-group v-model="group" active-class="green--text text--lighten-2">
+    
+          <router-link to="/">
           <v-list-item>
               <v-list-item-icon>
                 <v-icon>mdi-home</v-icon>
@@ -76,43 +45,24 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-sheet
-      id="scrolling-techniques-5"
-      class="overflow-y-auto"
-      max-height="100vh"
-    >
-      <v-container style="height: 1500px;">
-        <v-container class="d-flex align-center" id="rotas">
-            <router-view />
-        </v-container>
-      </v-container>
-    </v-sheet>
-  </v-card>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "AppTopBar",
+  name: 'AppTopBar',
   data() {
     return {
-      clubesTabela: [],
       drawer: false,
       group: null,
-      
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style scoped>
 .app-top-bar a {
   text-decoration: none;
+  color: white;
 }
-
-#rotas {
-  margin-top: 15vh;
-}
-
-a {
-  text-decoration: none;
-}
+</style>

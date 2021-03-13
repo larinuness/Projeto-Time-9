@@ -56,8 +56,7 @@ export default {
 }
 .home-image1 {
   border-radius: 3px;
-  display: flex;
-  justify-content: center;
+ 
 }
 
 .home-image2 {
