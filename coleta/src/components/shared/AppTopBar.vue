@@ -26,7 +26,7 @@
           <router-link to="/PontosColeta">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-bus</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Ponto de Coleta</v-list-item-title>
             </v-list-item>
@@ -35,7 +35,7 @@
           <router-link to="/Colabore">
             <v-list-item>
               <v-list-item-icon>
-                <v-icon>mdi-home</v-icon>
+                <v-icon>mdi-heart</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Colabore</v-list-item-title>
             </v-list-item>

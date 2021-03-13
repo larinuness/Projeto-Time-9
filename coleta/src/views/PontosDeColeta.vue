@@ -2,16 +2,18 @@
   <v-simple-table>
     <template v-slot:default>
       <thead>
+      
         <tr>
-          <th colspan="2" class="text-left">Pontos de Coleta</th>
-          <th colspan="2" class="text-left">Categoria</th>
-          <th colspan="2" class="text-left">endereco</th>
-              
+         
+          <th class="text-left">Pontos de Coleta</th>
+          <th class="text-left">Categoria</th>
+          <th  class="text-left">Endereço</th>     
         </tr>
+     
       </thead>
       <tbody>
-        <tr v-for="(ponto, index) of pontos" :key="ponto.id">
-          <td>{{ index + 1 }}</td>
+        <tr v-for="(ponto) of pontos" :key="ponto.id">
+          
           <td>
         
             <span class="pl-2">{{ ponto.nome }}</span>
@@ -53,3 +55,10 @@ export default {
 
 
 </script>
+<style scoped>
+tr {
+  justify-content: space-around;
+
+}
+</style>
+
