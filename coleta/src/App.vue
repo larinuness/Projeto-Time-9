@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div id="app">
     <div id="nav">
   
@@ -8,7 +7,6 @@
     </div>
     <router-view/>
   </div>
-=======
   <v-app>
     <AppTopBar/>
     
@@ -16,7 +14,6 @@
       <router-view/>
     </v-main> 
   </v-app>
->>>>>>> 5b1d15ad238075f4c1207c3484e14edd48bb33ab
 </template>
 
 <script>
