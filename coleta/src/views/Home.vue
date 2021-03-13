@@ -47,6 +47,8 @@ export default {
 
 .home .fotoexemplo {
   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .home p {
